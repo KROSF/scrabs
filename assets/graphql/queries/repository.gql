@@ -1,0 +1,22 @@
+query RepoView($owner: String!, $name: String!) {
+  repository(owner: $owner, name: $name) {
+    homepageUrl
+    owner {
+      login
+      avatarUrl
+      __typename
+    }
+    url
+    createdAt
+    languages(orderBy: { field: SIZE, direction: DESC }, first: 1) {
+      edges {
+        node {
+          name
+        }
+      }
+    }
+    stargazers {
+      totalCount
+    }
+  }
+}
