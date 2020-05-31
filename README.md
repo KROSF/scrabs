@@ -1,0 +1,3 @@
+# scrabs
+
+A discord bot
