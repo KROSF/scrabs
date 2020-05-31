@@ -1,5 +1,7 @@
 use crate::common::{
-    framework::ScrabsFramework, handler::ScrabsHandler, store::ShardManagerContainer,
+    framework::ScrabsFramework,
+    handler::ScrabsHandler,
+    store::{ShardManagerContainer, VoiceManager},
 };
 use serenity::{prelude::SerenityError, Client};
 use std::{collections::HashSet, sync::Arc};
@@ -20,6 +22,7 @@ impl ScrabsClient {
         {
             let mut data = client.data.write();
             data.insert::<ShardManagerContainer>(Arc::clone(&client.shard_manager));
+            data.insert::<VoiceManager>(Arc::clone(&client.voice_manager));
         }
 
         let owners = match client.cache_and_http.http.get_current_application_info() {
