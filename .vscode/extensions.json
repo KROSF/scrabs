@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "bungcip.better-toml",
+    "vadimcn.vscode-lldb",
+    "matklad.rust-analyzer",
+    "serayuzgur.crates",
+    "prisma.vscode-graphql"
+  ],
+  "unwantedRecommendations": []
+}

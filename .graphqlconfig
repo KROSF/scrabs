@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "github": {
+      "schemaPath": "assets/graphql/schemas/github.json",
+      "extensions": {
+        "endpoints": {
+          "default": {
+            "url": "https://api.github.com/graphql",
+            "headers": {
+              "Authorization": "bearer ${env:GITHUB_TOKEN}"
+            }
+          }
+        }
+      }
+    }
+  }
+}
