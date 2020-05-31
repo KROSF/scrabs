@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "KROSF",
+      "name": "Rodrigo Sanabria",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/24454660?v=4",
+      "profile": "https://krosf.com",
+      "contributions": [
+        "code",
+        "infra"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "scrabs",
+  "projectOwner": "KROSF",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
