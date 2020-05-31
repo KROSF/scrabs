@@ -9,6 +9,7 @@ use std::collections::HashSet;
 
 pub mod github;
 pub mod meta;
+pub mod music;
 
 #[help]
 #[individual_command_tip = "Hello! Hola! Bonjour\n\
