@@ -19,6 +19,7 @@ reqwest = "0.10"
 serde = "1.0"
 graphql_client = "0.9"
 dotenv = "0.15"
+anyhow = "1.0"
 
 [dependencies.serenity]
 default-features = false

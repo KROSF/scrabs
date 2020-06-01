@@ -1,7 +1,7 @@
 use serenity::{framework::StandardFramework, model::id::UserId};
 use std::collections::HashSet;
 
-use crate::commands::{self, meta, music};
+use crate::commands::{self, github, meta, music};
 
 pub struct ScrabsFramework;
 
@@ -17,5 +17,6 @@ impl ScrabsFramework {
             .help(&commands::SCRABS_HELP)
             .group(&meta::META_GROUP)
             .group(&music::MUSIC_GROUP)
+            .group(&github::GITHUB_GROUP)
     }
 }
